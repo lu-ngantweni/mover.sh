@@ -1,0 +1,1 @@
+This is a basic script to move files from directory and sub-directory to desired location, comes in handy for when needing to move media files and organize your media. Makes use of extention hence you should be able to add any extention you like.
