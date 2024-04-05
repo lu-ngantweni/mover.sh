@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Set the source and destination directories, replace the placehoders with your own
+src_dir="<source files>"
+dst_dir="<destination files>"
+
+# Iterate through all files and directories in the source directory
+find "$src_dir" -type f -name "*.mkv" | while read file; do
+    # Construct the destination path
+    dst_path="$dst_dir/$(basename "$file")"
+
+    # Move the file to the destination directory
+    mv "$file" "$dst_path"
+    echo "Moved $file to $dst_path"
+done
