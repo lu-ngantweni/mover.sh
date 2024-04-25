@@ -1,13 +1,5 @@
 #!/bin/bash
 
-<<<<<<< HEAD
-# Set the source and destination directories, replace the placehoders with your own
-src_dir="<source files>"
-dst_dir="<destination files>"
-
-# Iterate through all files and directories in the source directory
-find "$src_dir" -type f -name "*.mkv" | while read file; do
-=======
 # Prompt the user for input
 read -p "Enter the source directory: " src_dir
 read -p "Enter the destination directory: " dst_dir
@@ -15,7 +7,6 @@ read -p "Enter the file extension (e.g., .mkv): " file_ext
 
 # Iterate through all files and directories in the source directory
 find "$src_dir" -type f -name "*$file_ext" | while read file; do
->>>>>>> baec782 (Updated the script to request user input for src, dst and file extention. this will make it easier for user to enter this values instead of editing the script)
     # Construct the destination path
     dst_path="$dst_dir/$(basename "$file")"
 
